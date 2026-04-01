@@ -1478,3 +1478,14 @@
     filter: none !important;
   }
 }
+.intro-section::before,
+.intro-section::after,
+.intro-shell::before,
+.intro-shell::after,
+.zigzag-section::before,
+.zigzag-section::after,
+.zigzag-row::before,
+.zigzag-row::after {
+  display: none !important;
+  content: none !important;
+}
