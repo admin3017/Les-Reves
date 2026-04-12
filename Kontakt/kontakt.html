@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="kontakt.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-shell">
+          <a href="../index.html" class="brand">
+            <span class="brand-main">LES RÊVES</span>
+            <span class="brand-sub">KOTOR</span>
+          </a>
+      
+          <nav class="desktop-nav" aria-label="Primary navigation">
+            <a href="../index.html">Početna</a>
+            <a href="../Projekat/projekat.html">Projekat</a>
+            <a href="../Stanovi/stanovi.html">Stanovi</a>
+            <a href="../Galerija/galerija.html">Galerija</a>
+            <a href="kontakt.html" class="is-active">Kontakt</a>
+          </nav>
+      
+          <div class="nav-spacer" aria-hidden="true"></div>
+      
+          <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+          <a href="../index.html">Početna</a>
+          <a href="../Projekat/projekat.html">Projekat</a>
+          <a href="../Stanovi/stanovi.html">Stanovi</a>
+          <a href="../Galerija/galerija.html">Galerija</a>
+          <a href="kontakt.html" class="is-active">Kontakt</a>
+        </nav>
+      </header>
+
+  <main>
+    <section class="hero contact-hero">
+      <div class="projekat-media">
+        <img src="kontakt-hero.png" alt="Kontakt Les Rêves projekta u Kotoru" class="projekat-image" />
+      </div>
+  
+      <div class="hero-overlay"></div>
+  
+      <div class="hero-content">
+        <p class="projekat-kicker">Les Rêves · Kontakt</p>
+  
+        <h1>
+            Kontaktirajte Les Rêves i istražite dostupne mogućnosti
+          </h1>
+  
+        <a href="#kontakt-forma" class="hero-btn">Pošalji upit</a>
+  
+        <p class="hero-note">
+          Za više informacija o projektu, dostupnosti i privatnim upitima
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact-section" id="kontakt-forma">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <span class="contact-kicker">Les Rêves / kontakt</span>
+        <h2 class="contact-title">Zatražite više informacija</h2>
+        <p class="contact-text">
+          Za informacije o projektu, dostupnosti rezidencija i privatnim upitima,
+          pošaljite nam poruku putem forme ili nas kontaktirajte direktno.
+        </p>
+  
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:info@lesreves.me">info@lesreves.me</a>
+          </div>
+  
+          <div class="contact-info-item">
+            <span class="contact-label">Telefon</span>
+            <a href="tel:+38267000000">+382 67 000 000</a>
+          </div>
+  
+          <div class="contact-info-item">
+            <span class="contact-label">Lokacija</span>
+            <p>Kotor, Boka Kotorska, Crna Gora</p>
+          </div>
+        </div>
+  
+        <div class="contact-note">
+          <p>
+            Odgovaramo na upite u najkraćem roku i organizujemo privatne prezentacije projekta.
+          </p>
+        </div>
+      </div>
+  
+      <div class="contact-form-wrap">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/TVOJ_FORM_ID"
+          method="POST"
+        >
+          <div class="contact-form-grid">
+            <div class="form-field">
+              <label for="name">Ime i prezime</label>
+              <input type="text" id="name" name="name" placeholder="Vaše ime i prezime" required>
+            </div>
+  
+            <div class="form-field">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+382 ...">
+            </div>
+  
+            <div class="form-field form-field-full">
+              <label for="email">Email adresa</label>
+              <input type="email" id="email" name="email" placeholder="vas@email.com" required>
+            </div>
+  
+            <div class="form-field form-field-full">
+              <label for="interest">Tema upita</label>
+              <select id="interest" name="interest" required>
+                <option value="">Odaberite temu</option>
+                <option value="projekat">Informacije o projektu</option>
+                <option value="stanovi">Dostupni stanovi</option>
+                <option value="obilazak">Privatni obilazak</option>
+                <option value="ostalo">Ostalo</option>
+              </select>
+            </div>
+  
+            <div class="form-field form-field-full">
+              <label for="message">Poruka</label>
+              <textarea id="message" name="message" rows="6" placeholder="Napišite vaš upit..." required></textarea>
+            </div>
+  
+            <div class="form-field form-field-full checkbox-field">
+              <label class="checkbox-wrap" for="privateTour">
+                <input type="checkbox" id="privateTour" name="privateTour" value="Da">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">Želim da me kontaktirate za privatnu prezentaciju projekta</span>
+              </label>
+            </div>
+          </div>
+  
+          <input type="hidden" name="_subject" value="Les Rêves kontakt upit">
+          <input type="hidden" name="_next" value="https://tvojdomen.me/hvala.html">
+  
+          <div class="contact-form-actions">
+            <button type="submit" class="contact-submit">Pošalji upit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact-map-section">
+    <div class="contact-map-shell">
+      <iframe
+        src="https://www.google.com/maps?q=Kotor,+Montenegro&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-label="Mapa lokacije Kotor, Crna Gora">
+      </iframe>
+    </div>
+  </section>
+
+  
+  
+  <footer class="site-footer" id="kontakt">
+    <div class="footer-lines">
+      <span class="footer-line footer-line-top"></span>
+      <span class="footer-line footer-line-left"></span>
+      <span class="footer-line footer-line-mid"></span>
+      <span class="footer-line footer-line-right"></span>
+    </div>
+  
+    <div class="footer-main">
+      <div class="footer-brand-block">
+        <p class="footer-label">Les Rêves / Rezidencijalni koncept</p>
+        <h2 class="footer-brand">Les Rêves</h2>
+        <p class="footer-text">
+          Savremeno stanovanje sa mediteranskim karakterom, pažljivo oblikovano
+          za ljude koji traže mir, estetiku i dugoročnu vrednost.
+        </p>
+      </div>
+  
+      <div class="footer-links-block">
+        <div class="footer-col">
+          <span class="footer-col-title">Navigacija</span>
+          <a href="#projekat">Projekat</a>
+          <a href="#stanovi">Dostupni stanovi</a>
+          <a href="#onama">O nama</a>
+          <a href="#galerija">Galerija</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+  
+        <div class="footer-col">
+          <span class="footer-col-title">Kontakt</span>
+          <a href="tel:+38267000000">+382 67 000 000</a>
+          <a href="mailto:info@lesreves.me">info@lesreves.me</a>
+          <p>Kotor, Crna Gora</p>
+        </div>
+  
+        <div class="footer-col">
+          <span class="footer-col-title">Društvene mreže</span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <span>© 2026 Les Rêves</span>
+      <a href="#">Politika privatnosti</a>
+    </div>
+  </footer>
+
+  <script src="kontakt.js"></script>
+  </body>
+
+  </html>
